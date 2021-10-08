@@ -1,0 +1,87 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+/*
+//test
+
+body {height: 3000px;}
+.dot {width: 2px;height: 2px;background-color: black;position: absolute;}
+*/
+
+
+.Search-bar-width{
+    width: 400px !important;
+}
+
+.slider-pagination-bullet-active{
+    background: #ffab08 !important;
+}
+
+.slider-pagination-bullet{
+    opacity: 1 !important;
+}
+
+
+//Product Page
+hr {
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color: #989898;
+    height: 1px;
+}
+
+
+.width-reduce{
+    width: 30px;
+}
+
+
+
+//Home Page
+
+.background-links{
+    background: #2b2b2b;
+}
+
+.text-links-colour{
+    //color: #ffa800 !important;
+    color: #ffffff !important;
+}
+
+.background-colour{
+    background-color: #d2d2d2;
+}
+
+
+.link-font{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+
+a:hover{
+    color: #FFA800 !important;
+}
+
+
+
+
