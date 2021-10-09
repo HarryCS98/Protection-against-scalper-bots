@@ -15,7 +15,7 @@
 This project was produced for my dissertation. It looks at user inputs such as mouse position and typing speed then checks these against patterns that were identified in the testing phase of this project. It then uses these patterns to check to see if the user is a scalper bot or not. The Project uses Laravel 8 for the e-commerce store and VueJS to collect the mouse postion and typing speed data which is stored in a mongoDB database.
 
 
-## Current Features/Planned Features
+## Features
 
  - [x] Fully working e-commerce store - User accounts + Salt and hashed passwords working basket- Products etc.
  - [x] Mouse position data logging to MongoDB database using VueJS
