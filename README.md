@@ -22,6 +22,7 @@ This project was produced for my dissertation. It looks at user inputs such as m
  - [x] Typing speed data logging to MongoDB database using VueJS
  - [x] RestAPI to allow VueJS to interact with the PHP backend
  - [x] Bot detection using pattern recognition in PHP and VueJS 
+ - [x] IP address banning system in PHP
  - [x] NodeJS Scalper bot for testing using puppeteer and its stealth plugin 
  - [x] Java Scalper bot for testing using the selenium library.
   
