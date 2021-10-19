@@ -15,18 +15,18 @@
 
             /*add mouse movement into the database*/
             mouse_Movements_Collect(){
-                var xpos = [];
-                var ypos = [];
-                var counter = 0;
-                var url = window.location.pathname;
-                var ip;
+                let xpos = [];
+                let ypos = [];
+                let counter = 0;
+                let url = window.location.pathname;
+                let ip;
                 if(url == '/'){
                     url = '/landing_page'
                 }
                 /*Remove all slashes out of our variable*/
-                var url = url.replace("/","");
-                var url = url.replace("/","_");
-                var url = url.replace("/","_");
+                let url = url.replace("/","");
+                    url = url.replace("/","_");
+                    url = url.replace("/","_");
 
 
                 //Get ip of the client
@@ -101,8 +101,8 @@
 
             /*Create the database entry with all of information*/
             inital_Entry_Create(){
-                var first_data=[];
-                var url = window.location.pathname;
+                let first_data=[];
+                let url = window.location.pathname;
                 url = url.replace('/','');
                 url = url.replace('/','_');
 
