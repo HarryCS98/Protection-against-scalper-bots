@@ -33,7 +33,7 @@
             get(){
 
                 //Get the current url of the page  /test/86.123.54.312
-                var url = window.location.pathname
+                let url = window.location.pathname
 
                 //Clean up the url so its only contains the url
                 //TODO change this to reflect the final name of the page
@@ -43,7 +43,7 @@
 
 
                 //Create the raw_data variable this will hold our repsonse data from ur axios statment
-                var raw_data;
+                let raw_data;
 
 
 
@@ -58,7 +58,7 @@
                  /*   clean_data = raw_data[0].coords.split(",");*/
 
                     //Create the variable for our for loop
-                   var i;
+                   let i;
 
                     console.log(raw_data)
 
@@ -67,9 +67,9 @@
 
 
                        //Create our variables
-                       var clean_data = [];
-                       var x_data = [];
-                       var y_data = [];
+                       let clean_data = [];
+                       let x_data = [];
+                       let y_data = [];
 
 
 
@@ -81,7 +81,7 @@
 
                        //Create another for loop this lets us loop through the array take every other place in the array and put it in the x data and then the other in the right so it looks like
                        //0 -> x 1-> y 2-> x 3-> y
-                       var b;
+                       let b;
                        for(b = 0; b < clean_data.length; b++){
                            if(b % 2 == 0){
                                x_data.push(clean_data[b]);
@@ -98,7 +98,7 @@
                       /* console.log(test);*/
 
                        //Create all the propertys that our graph will need to plot its self
-                       var graph_data= {
+                       let graph_data= {
                            x: x_data,
                            y: y_data,
                            mode: 'markers',
@@ -108,14 +108,14 @@
 
                        //Formate the data and time so we can display it next to the page name
 
-                       var d = new Date(raw_data[i]["updated_at"]);
+                       let d = new Date(raw_data[i]["updated_at"]);
 
-                       var datestring = ("0" + d.getDate()).slice(-2) + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +
+                       let datestring = ("0" + d.getDate()).slice(-2) + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +
                            d.getFullYear() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2);
 
 
                        //Set up our layout for our graphs
-                       var layout = {
+                       let layout = {
                            title: {
                                text: raw_data[i]['url'] + " " + datestring, //The url of the page the graph is of and the time it was taken
                                font: {
@@ -130,10 +130,10 @@
 
 
                        //Turn graph_data into an array to pass it over to our plotly command
-                       var data = [graph_data];
+                       let data = [graph_data];
 
                        //Add 1 to our i value which gives us the div element that holds the graph this is becuase our array of data starts at 0 but our divs start at 1
-                       var div_number = i + 1;
+                       let div_number = i + 1;
 
                        //Plot the graph
                        Plotly.newPlot(div_number.toString(), data,layout);
