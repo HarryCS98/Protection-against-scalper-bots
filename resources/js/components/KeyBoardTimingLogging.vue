@@ -150,7 +150,7 @@
                         .then(response => response.json())
                         .then(response => {
                             this.ip = response.ip;
-                            var url = window.location.pathname;
+                            let url = window.location.pathname;
                             axios.post('/api/keyboardcreate/' + this.ip  + url).then (response =>{
                                /* console.log(response.data)*/
                             })
@@ -170,19 +170,19 @@
 
             time_Collect(){
 
-               var time = performance.now();
+               let time = performance.now();
 
                 this.data.push(time);
 
-                var counter = 0;
+                let counter = 0;
 
                 if (this.data.length != 0 && this.data.length % 2 === 0){
 
-                    var length = this.data.length - 1;
+                    let length = this.data.length - 1;
 
-                    var time = this.data[length] - this.data[length - 1]
+                    let time = this.data[length] - this.data[length - 1]
 
-                    var url = window.location.pathname;
+                    let url = window.location.pathname;
 
                     axios.post('/api/keyboard_data/' + this.ip  + url + '/' + time).then (response =>{
                     })
